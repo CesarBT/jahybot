@@ -2,16 +2,21 @@
     padding:0;
     margin:0;
   }
+  body{
+      background-color: #364A73;
+  }
   
   h1{
+    font-size: 50px;
+    font-family: sans-serif;
     text-align: center;
-    background-color: black;
+    background-color: #010440;
     color:white;
     padding: 20px;
   }
 
   nav ul{
-      background-color: #757575;
+      background-color: #010440;
       width: 100%;
       list-style-type: none;
       text-align: center;
@@ -22,13 +27,18 @@
   }
 
   nav a{
+      font-family: Arial, Helvetica, sans-serif;
+      border-radius: 30px;
+      border: 3px #9EA3B9 solid;
+      background-color: #364A73;
       text-decoration: none;
       color: white;
-      padding: 30px;
-      width: 150px;
+      padding: 20px;
+      width: 100px;
   }
 
-  nav li:hover {
-      background-color: #606060;
+  nav a:hover {
+    box-shadow: 0 0 20px #364A73, 0 0 20px #364A73, 0 0 90px #364A73;
+    transition-delay: 1ms;
   }
   
