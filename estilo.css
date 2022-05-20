@@ -2,43 +2,67 @@
     padding:0;
     margin:0;
   }
-  body{
-      background-color: #364A73;
+  :root{
+      --fondo_h1: #2C638F;
+      --fondo: #12238F;
+      --boton_borde: #F6FBF8;
+      --boton_background: ;
   }
-  
+  body{
+      background-color: var(--fondo);
+  }
   h1{
     font-size: 50px;
     font-family: sans-serif;
-    text-align: center;
-    background-color: #010440;
+    text-align: left;
+    background-color: var(--fondo_h1);
     color:white;
     padding: 20px;
   }
-
+  h2{
+      font-family: sans-serif;
+  }
   nav ul{
-      background-color: #010440;
+      position: absolute;
+      top: 10px;
+      left: 250px;
       width: 100%;
       list-style-type: none;
-      text-align: center;
   }
-  
   nav li{
       display: inline-flex;
   }
-
   nav a{
       font-family: Arial, Helvetica, sans-serif;
       border-radius: 30px;
-      border: 3px #9EA3B9 solid;
-      background-color: #364A73;
+      border: 3px var(--boton_borde) solid;
+      background-color: var(--boton_background);
       text-decoration: none;
       color: white;
       padding: 20px;
       width: 100px;
   }
-
   nav a:hover {
     box-shadow: 0 0 20px #364A73, 0 0 20px #364A73, 0 0 90px #364A73;
     transition-delay: 1ms;
   }
-  
+div.redes_sociales{
+    position: absolute;
+    top: 20px;
+    left: 1250px;
+    width: 50px;
+}
+div.redes_sociales img:hover{
+    transition: 1s;
+    transform: rotate(360deg);
+}
+div.redes_sociales li{
+    display: inline-flex;
+    width: 50px;
+}
+div.redes_sociales a{
+    width: 50px;
+}
+div.redes_sociales img{
+    width: 50px;
+}
