@@ -76,7 +76,7 @@ div.redes_sociales img{
 @media(max-width: 768px){
 header #branding,
   header nav,
-  header nav li{
+  header nav ul{
     width:100%;
 }
 nav ul{
